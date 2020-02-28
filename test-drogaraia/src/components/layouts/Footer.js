@@ -26,7 +26,7 @@ function Footer(){
           {/* Column 3 */}
           <div className="col-md-2 col-sm-6">
             <ul className="list-unstyled">
-            <li><img src="../rd-small"/></li>
+            <li><img src="../rd-small.png"/></li>
             </ul>
           </div>
         </div>
