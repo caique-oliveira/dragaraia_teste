@@ -42,7 +42,7 @@ function Cards(){
           <div className="card-body">
             <h5 className="card-title">Site Responsivo Desktop</h5>
             <p id="text-card" className="card-text">Quando pressionado o botão <strong>Leia mais...</strong> &nbsp;o
-restante da informação deverá aparecer e, scroll down.</p>
+restante da informação deverá aparecer e, scroll down.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             <a href="#" id="btn1" className="btn btn-primary" onClick={handleClick}>Leia mais</a>
           </div>
         </div>
