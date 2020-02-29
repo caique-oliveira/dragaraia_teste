@@ -11,7 +11,7 @@ export const NavbarSection = styled.div`
 export const Logo = styled.div`
     width: 10%;
     float: left;
-    text-indent: -9999999px;
+    text-indent: 30%;
     display: inline-block;
     height: 100%;
     width: 145px;

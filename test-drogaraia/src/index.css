@@ -81,18 +81,6 @@ body {
     color: #868686;
 }
 
-.logo {
-    text-indent: -9999999px;
-    display: inline-block;
-    height: 100%;
-    width: 145px;
-    background-image: url(rd.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-}
-
 .container{
     width: 1200px!important;
     margin: auto;

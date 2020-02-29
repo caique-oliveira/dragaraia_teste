@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Logo, LogoText, UlList, ListItem, Anchor } from './style.js';
-//import Logo from '../../imagens/rd.png'
+import { Logo, UlList, ListItem, Anchor } from './style.js';
+import logo from '../../imagens/rd.png';
 
 const NavbarSection = styled.div`
   padding: 20px 0;
@@ -10,11 +10,12 @@ const NavbarSection = styled.div`
     position: relative;
     border-bottom: 0.5px solid #868686;
 `
+
 const navbar = () => {
     return(
         <NavbarSection>
                 <Logo>
-                    <LogoText>Ultra Profile</LogoText>
+                    <img className="myLogo" src={logo} />
                 </Logo>
                     <UlList>
                         <ListItem>

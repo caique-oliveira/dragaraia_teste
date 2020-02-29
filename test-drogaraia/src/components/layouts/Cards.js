@@ -4,7 +4,36 @@ import Desktop from '../../imagens/desktop.png'
 import  Tablet from '../../imagens/tablet.png'
 import Mobile from '../../imagens/mobile.png'
 
+
 function Cards(){
+  function handleClick(){
+
+      var txt = document.getElementsByClassName('card-text').innerHTML;
+      var txt2 = txt.substr(0,100)+'...';
+      document.getElementsByClassName('card-text').innerHTML = txt2;
+   
+     if(txt<txt2 ){
+       document.getElementsByClassName('card-text').innerHTML = txt;
+       document.getElementById('btn1').innerHTML = 'Mostrar Menos'; 
+     }else{
+        document.getElementsByClassName('card-text').innerHTML = txt2;
+        document.getElementById('btn1').innerHTML = 'Mostrar Mais'; 
+     }
+   
+       
+   function Mostrar(){
+   
+      if(document.getElementById('btn1').innerHTML == 'Mostrar Mais'){
+        document.getElementsByClassName('card-text').innerHTML = txt;
+        document.getElementById('btn1').innerHTML = 'Mostrar Menos'; 
+      }else{
+        document.getElementsByClassName('card-text').innerHTML = txt2;
+        document.getElementById('btn1').innerHTML = 'Mostrar Mais'; 
+      }
+   
+   }
+  }
+  
   return(
     <Fragment>
       <div className="container">
@@ -13,8 +42,8 @@ function Cards(){
           <div className="card-body">
             <h5 className="card-title">Site Responsivo Desktop</h5>
             <p className="card-text">Quando pressionado o botão <strong>Leia mais...</strong> &nbsp;o
-restante da informação deverá aárecer e, scroll down.</p>
-            <a href="#" id="btn1" className="btn btn-primary">Leia mais</a>
+restante da informação deverá aparecer e, scroll down.</p>
+            <a href="#" id="btn1" className="btn btn-primary" onClick={handleClick}>Leia mais</a>
           </div>
         </div>
         <div className="card" style = {{width: "20em"}}>
@@ -22,7 +51,7 @@ restante da informação deverá aárecer e, scroll down.</p>
           <div className="card-body">
             <h5 className="card-title">Site Responsivo Desktop</h5>
             <p className="card-text">Quando pressionado o botão <strong>Leia mais...</strong> &nbsp;o
-restante da informação deverá aárecer e, scroll down.</p>
+restante da informação deverá aparecer e, scroll down.</p>
             <a href="#" id="btn2" className="btn btn-primary btn2">Leia mais</a>
           </div>
         </div>
