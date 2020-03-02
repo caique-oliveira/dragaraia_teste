@@ -1,7 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const ThemeSwitcher = ({ toggleTheme }) => (
-    <button onClick={toggleTheme}>Alterar tema</button>
-);
+function ThemeSwitcher({ toggleTheme }) {
+  return (
+    <button type="button" onClick={toggleTheme}>
+      Alterar tema!
+    </button>
+  );
+}
+
+ThemeSwitcher.propTypes = {
+  toggleTheme: PropTypes.func.isRequired,
+};
 
 export default ThemeSwitcher;
