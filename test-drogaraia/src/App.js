@@ -5,13 +5,12 @@ import Navbar from './components/layouts/Navbar';
 import Footer from './components/layouts/Footer';
 import Cards from './components/layouts/Cards';
 import Wrapper from '~/components/layouts/Wrapper';
-import TodoList from './components/TodoList';
-import ThemeSwitcher from './components/ThemeSwitcher';
+
 import { dark, light } from './styles/themes';
 import ThemeContext from './styles/themes/context';
 
 function App() {
-  const [myTheme, setThemes] = useState(dark);
+  const [myTheme, setThemes] = useState(light);
 
   function toggleTheme() {
     setThemes(myTheme === dark ? light : dark);

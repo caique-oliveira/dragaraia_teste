@@ -7,6 +7,7 @@ import Desktop from '~/imagens/desktop.png';
 import Tablet from '~/imagens/tablet.png';
 import CardThemed from '~/components/CardThemed';
 import { Container } from './style';
+import ReactModal from 'react-modal';
 
 function Cards({ toggleTheme }) {
   function handleClick(e) {
@@ -63,7 +64,7 @@ function Cards({ toggleTheme }) {
               <PerfectScrollbar>
                 <p id="text-card" className="card-text">
                   Quando pressionado o botão <strong>Leia mais...</strong>{' '}
-                  &nbsp;o restante da informação deverá aparecer e, scroll down.
+                  &nbsp;o restante da informação deverá aparecer complata em um popup de tela.
                   <span id="showmore-card2" className="hide">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptatibus iusto nesciunt quo veritatis incidunt labore,
