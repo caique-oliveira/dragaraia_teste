@@ -1,217 +1,228 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 * {
-    box-sizing: border-box;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #ededed!important;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background-color: #ededed !important;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .container {
-    width: 1000px;
-    margin: 20px auto;
+  width: 1000px;
+  margin: 20px auto;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .menu {
-    background-color: white;
-    box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
-    position: relative;
+  background-color: white;
+  box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: relative;
 }
 
 .menu__right {
-    display: flex;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .menu__list {
-    list-style-type: none;
-    padding: 0;
-    height: 100%;
-    margin: 0;
-    margin-right: 40px;
+  list-style-type: none;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+  margin-right: 40px;
 }
 
 .menu__list-item {
-    display: inline-block;
-    height: 100%;
-    margin-right: 20px;
+  display: inline-block;
+  height: 100%;
+  margin-right: 20px;
 }
 
 .menu__list-item:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .menu__link {
-    color: #007f56;
-    display: inline-block;
-    height: 100%;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    padding: 0 3px;
+  color: #007f56;
+  display: inline-block;
+  height: 100%;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
 }
 
 .menu__link:hover {
-    color: #868686;
+  color: #868686;
 }
 .scrollbar-container {
-    position: relative;
-    height: 100%;
-    max-height: 100px;
+  position: relative;
+  height: 100%;
+  max-height: 100px;
 }
-.container{
-    width: 1200px!important;
-    margin: auto;
+.container {
+  width: 1200px !important;
+  margin: auto;
 }
 
 .navbar {
-    padding: 20px 0;
-    overflow: hidden;
-    background: #ededed;
-    position: relative;
-    border-bottom: 1px solid #ededed;
+  padding: 20px 0;
+  overflow: hidden;
+  background: #ededed;
+  position: relative;
+  border-bottom: 1px solid #ededed;
 }
 
 .navbar .logo {
-    width: 10%;
-    float: left;
+  width: 10%;
+  float: left;
 }
 
-.navbar .logo .logo-text{
-    font-size: 30px;
-    font-weight: bold
+.navbar .logo .logo-text {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.navbar input , .navbar label {
-    position: absolute;
-    top: 13px;
-    right: 25px;
+.navbar input,
+.navbar label {
+  position: absolute;
+  top: 13px;
+  right: 25px;
 }
 
 .navbar .ul-list {
-    width: 30%;
-    float: right;
-    list-style: none;
-    white-space: nowrap;
-    padding: 0;
+  width: 30%;
+  float: right;
+  list-style: none;
+  white-space: nowrap;
+  padding: 0;
 }
 
 .navbar .ul-list .list-item {
-    display: inline-block;
+  display: inline-block;
 }
 
 .navbar .ul-list .list-item a {
-    display: block;
-    color: #007f56;
-    text-decoration: none;
-    padding: 10px 15px;
+  display: block;
+  color: #007f56;
+  text-decoration: none;
+  padding: 10px 15px;
 }
 
 .navbar .ul-list .list-item a:hover {
-    color: #868686;
+  color: #868686;
 }
-.container .card{
-    display: inline-block;
+.container .card {
+  display: inline-block;
 }
 .card {
-    position: relative;
-    display: inline-block;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: none;
-    border-radius: .25rem;
-    margin: 0 15px;
-    margin-top: 15px;
+  position: relative;
+  display: inline-block;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0.25rem;
+  margin: 0 15px;
+  margin-top: 15px;
 }
 .btn-primary:hover {
-    color: #868686;
+  color: #868686;
 }
 a#btn1 {
-    background: #FE9481;
-    border: none;
+  background: #fe9481;
+  border: none;
 }
 a#btn2 {
-    background: #FCDA92;
-    border: none;
+  background: #fcda92;
+  border: none;
 }
 a#btn3 {
-    background: #9C8CB9;
-    border: none;
+  background: #9c8cb9;
+  border: none;
 }
 .icon-desk {
-    background: #FE9481;
+  background: #fe9481;
 }
 .icon-tablet {
-    background: #FCDA92;
+  background: #fcda92;
 }
 .icon-mobile {
-    background: #9C8CB9;
+  background: #9c8cb9;
 }
 ul.list-unstyled li {
-    display: inline;
+  display: inline;
 }
 .main-footer {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 a.btn.btn-primary {
-    float: right;
-    height: 1.5em;
-    border-radius: 0;
-    margin-bottom: 15px;
-    line-height: 0.5;
+  float: right;
+  height: 1.5em;
+  border-radius: 0;
+  margin-bottom: 15px;
+  line-height: 0.5;
 }
-/* Media for Navbar Style */ 
+/* Media for Navbar Style */
 
-@media (min-width : 992px) {
-    .navbar label {
-        display: none
-    }
+@media (min-width: 992px) {
+  .navbar label {
+    display: none;
+  }
 }
 
-@media (max-width : 991px) {
-    .navbar .logo {
-        width: 100%;
-        float: none;
-    }
-    
-    .navbar .ul-list {
-        width: 100%;
-        float:  none;
-        margin-top: 20px;
-        display: none
-    }
-    
-    .navbar .ul-list .list-item {
-        display: block;
-        text-align: center;
-    }
+@media (max-width: 991px) {
+  .navbar .logo {
+    width: 100%;
+    float: none;
+  }
+
+  .navbar .ul-list {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+    display: none;
+  }
+
+  .navbar .ul-list .list-item {
+    display: block;
+    text-align: center;
+  }
+}
+
+.card-1 {
+  background: #fe9481 !important;
+}
+.card-2 {
+  background: #fcda92 !important;
+}
+.card-3 {
+  background: #9c8cb9 !important;
 }
