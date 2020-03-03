@@ -12,6 +12,7 @@ export const StyledMenu = styled.nav`
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
+  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
   
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100%;
@@ -30,10 +31,12 @@ export const StyledMenu = styled.nav`
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 1.5rem;
       text-align: center;
+      
     }
 
     &:hover {
       color: ${({ theme }) => theme.primaryHover};
     }
+    
   }
 `;

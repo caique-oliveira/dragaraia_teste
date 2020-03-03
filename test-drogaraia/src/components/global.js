@@ -19,5 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     text-rendering: optimizeLegibility;
   }
+  background: ${({ theme }) => theme.primaryDark};
+  color: ${({ theme }) => theme.primaryLight};
   `
   export default GlobalStyles;
