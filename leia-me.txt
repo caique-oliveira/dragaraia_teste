@@ -1,4 +1,4 @@
-Primeiramente boa sorte em seu teste!!!
+﻿Primeiramente boa sorte em seu teste!!!
 
 É obrigatório que o site seja desenvolvido em React e desejável que utilize o styled-components para folha de estilo.
 
@@ -8,3 +8,5 @@ Observações:
 - tamanho do container: 1200px;
 - imagens enviadas estão no tamanho correto
 - links do menu e do rodapé não precisam ter ação
+
+import { GlobalStyles } from './components/global';

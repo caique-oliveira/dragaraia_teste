@@ -37,7 +37,12 @@ const navbar = () => {
                             <Anchor>Redux</Anchor>
                         </ListItem>
                     </UlList>
-        </NavbarSection>    
+                    
+        </NavbarSection>   
+        
+        
     )
   }
+
+  
   export default navbar;

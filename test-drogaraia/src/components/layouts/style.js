@@ -7,7 +7,6 @@ export const NavbarSection = styled.div`
   position: relative;
   border-bottom: 1px solid #ededed;
 `;
-
 export const Logo = styled.div`
   width: 10%;
   float: left;
@@ -47,7 +46,11 @@ export const Anchor = styled.a`
     color: #868686 !important;
   }
 `;
+export const AlturaCard = styled.div`
+  margin-top: 12%;
 
+`;
 export const Container = styled.div`
   /* background: ${({ theme }) => theme.background}; */
+     
 `;
