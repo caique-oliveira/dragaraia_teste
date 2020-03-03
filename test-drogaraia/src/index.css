@@ -5,10 +5,13 @@
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-html,
-body {
+* {
   margin: 0;
   padding: 0;
+}
+html {
+  background: url(./imagens/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 body {

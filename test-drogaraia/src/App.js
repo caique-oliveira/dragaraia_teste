@@ -7,8 +7,7 @@ import Cards from './components/layouts/Cards';
 import Wrapper from '~/components/layouts/Wrapper';
 import { dark, light } from './styles/themes';
 import ThemeContext from './styles/themes/context';
-import NavbarPro from './components/navigator/Navbar';
-
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 function App() {
   const [myTheme, setThemes] = useState(light);
@@ -17,7 +16,7 @@ function App() {
     setThemes(myTheme === dark ? light : dark);
   }
   return (
-    <NavbarPro />
+  
     <ThemeContext.Provider value={myTheme}>
       <ThemeContext.Consumer>
         {theme => (

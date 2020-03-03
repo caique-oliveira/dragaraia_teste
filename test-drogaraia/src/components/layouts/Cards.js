@@ -1,15 +1,22 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useState } from 'react';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import 'react-perfect-scrollbar/dist/css/styles.css';
-
 import Desktop from '~/imagens/desktop.png';
 import Tablet from '~/imagens/tablet.png';
 import CardThemed from '~/components/CardThemed';
 import { Container } from './style';
-import ReactModal from 'react-modal';
+import Popup from './Popup';
 
 function Cards({ toggleTheme }) {
+  
+  const [showPopup, setShowPopup] = useState('false');
+
+  function handlePopup() {
+    setShowPopup('true');
+  }
+  function hidePopup() {
+    setShowPopup('false');
+  }
   function handleClick(e) {
     const { id } = e.target;
 
@@ -78,14 +85,21 @@ function Cards({ toggleTheme }) {
                 href="#"
                 id="btn2"
                 className="btn btn-primary btn2"
-                onClick={handleClick}
+                onClick={handlePopup}
               >
                 Leia mais
               </a>
             </div>
           </div>
           <CardThemed toggleTheme={toggleTheme} />
+     
         </div>
+
+        <Popup
+          show={showPopup}
+          onChange={hidePopup} 
+          text="Texto que vc vai querer que apareça na popup"
+/>
       </Container>
     </>
   );
