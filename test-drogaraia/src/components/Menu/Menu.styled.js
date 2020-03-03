@@ -13,8 +13,9 @@ export const StyledMenu = styled.nav`
   left: 0;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
-  
+  display: none;
   @media (max-width: ${({ theme }) => theme.mobile}) {
+      display: block;
     width: 100%;
   }
 

@@ -6,6 +6,10 @@ export const NavbarSection = styled.div`
   background: #ededed;
   position: relative;
   border-bottom: 1px solid #ededed;
+  
+  @media screen and (max-width: 768px){
+    display:none;
+  }
 `;
 export const Logo = styled.div`
   width: 10%;
@@ -54,3 +58,4 @@ export const Container = styled.div`
   /* background: ${({ theme }) => theme.background}; */
      
 `;
+

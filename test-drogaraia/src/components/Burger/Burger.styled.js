@@ -20,6 +20,7 @@ export const StyledBurger = styled.button`
   }
   
   div {
+    display: none;
     width: 2rem;
     height: 0.25rem;
     background: ${({ theme }) => theme.primaryLight};
@@ -39,6 +40,9 @@ export const StyledBurger = styled.button`
   
       :nth-child(3) {
         transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+      }
+      @media screen and (max-width: 768px){
+        display:block;
       }
   }
 `;

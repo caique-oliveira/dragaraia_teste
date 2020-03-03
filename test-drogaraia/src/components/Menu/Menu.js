@@ -6,7 +6,7 @@ const Menu = ({ open }) => {
   return (
     <StyledMenu>
       <a href="/">
-        <span role="img" aria-label="about us">&#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;</span>
+        <span role="img" aria-label="about us">&#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;>dhdhdhd</span>
         About us
       </a>
       <a href="/">
