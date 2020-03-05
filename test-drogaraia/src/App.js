@@ -24,10 +24,6 @@ function App() {
   return (
     <>
     <ThemeProvider theme={theme}>
-         
-        <div>
-          
-        </div>
         <div>
           <Burger open={open} setOpen={setOpen} />
           <Menu open={open} setOpen={setOpen} />

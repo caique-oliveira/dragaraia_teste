@@ -3,14 +3,16 @@ import styled from 'styled-components';
 import { Logo, UlList, ListItem, Anchor } from './style.js';
 import logo from '../../imagens/rd.png';
 
-
-
 const NavbarSection = styled.div`
   padding: 20px 0;
     overflow: hidden;
     background: #ededed;
     position: relative;
     border-bottom: 0.5px solid #868686;
+
+    @media screen and (max-width: 768px){
+        display:none;
+      }
 `
 
 const navbar = () => {
