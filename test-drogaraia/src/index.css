@@ -152,6 +152,18 @@ body {
     margin: 0 15px;
     margin-top: 15px;
 }
+.card-title {
+    color: #fff;
+    margin-bottom: .75rem;
+    position: absolute;
+    top: 133px;
+}
+.card-title3 {
+    color: #fff;
+    margin-bottom: .75rem;
+    position: absolute;
+    top: 170px;
+}
 .btn-primary:hover {
     color: #868686;
 }
