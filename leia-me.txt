@@ -9,4 +9,3 @@ Observações:
 - imagens enviadas estão no tamanho correto
 - links do menu e do rodapé não precisam ter ação
 
-import { GlobalStyles } from './components/global';

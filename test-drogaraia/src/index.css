@@ -164,6 +164,12 @@ body {
     position: absolute;
     top: 170px;
 }
+p#text-card {
+    color: #868686;
+}
+p.card-text {
+    color: #868686;
+}
 .btn-primary:hover {
     color: #868686;
 }

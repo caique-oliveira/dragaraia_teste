@@ -25,12 +25,18 @@ const PopupInner = styled.div`
   background: white;
 `;
 const Button = styled.button`
-  color: 'white';
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid green;
-  border-radius: 3px;
+color: 'white';
+font-size: 1em;
+margin: 1em;
+padding: 0.25em 1em;
+/* border: 2px solid green; */
+border-radius: 3px;
+float: right;
+position: absolute;
+top: -22px;
+border: none;
+right: -16px;
+  
 `;
 export default function Popup({ ...props }) {
   const [show, setShow] = useState(props.show);
@@ -50,7 +56,7 @@ export default function Popup({ ...props }) {
         <PopupFrame>
           <PopupInner>
             {props.text}
-            <Button onClick={close}>Fechar</Button>
+            <Button onClick={close}>X</Button>
           </PopupInner>
         </PopupFrame>
       ) : null}
