@@ -102,13 +102,9 @@ body {
 
 .navbar .logo {
   width: 10%;
-  float: left;
+  
 }
 
-.navbar .logo .logo-text {
-  font-size: 30px;
-  font-weight: bold;
-}
 
 .navbar input,
 .navbar label {
@@ -119,7 +115,7 @@ body {
 
 .navbar .ul-list {
   width: 30%;
-  float: right;
+  
   list-style: none;
   white-space: nowrap;
   padding: 0;

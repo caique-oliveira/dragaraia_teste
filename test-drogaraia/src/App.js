@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import  GlobalStyles  from './components/global';
 import { theme } from './theme';
 import  Burger  from './components/Burger';
 import Menu from './components/Menu';
@@ -25,9 +24,9 @@ function App() {
   return (
     <>
     <ThemeProvider theme={theme}>
-         <GlobalStyles />
+         
         <div>
-          <img src="https://image.flaticon.com/icons/svg/2016/2016012.svg" alt="burger icon" />
+          
         </div>
         <div>
           <Burger open={open} setOpen={setOpen} />
