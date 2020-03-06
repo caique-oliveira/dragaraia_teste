@@ -36,7 +36,7 @@ position: absolute;
 top: -22px;
 border: none;
 right: -16px;
-  
+
 `;
 export default function Popup({ ...props }) {
   const [show, setShow] = useState(props.show);
@@ -52,7 +52,7 @@ export default function Popup({ ...props }) {
 
   return (
     <>
-      {show == 'true' ? (
+      {show === 'true' ? (
         <PopupFrame>
           <PopupInner>
             {props.text}

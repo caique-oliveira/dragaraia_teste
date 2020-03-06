@@ -1,13 +1,22 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
-  * {
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+  html, body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    outline: 0;
-    box-sizing: border-box;
+  }
+  body {
+    background: #ededed;
+    color: #EFFFFA;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    text-rendering: optimizeLegibility;
   }
 
   *:focus {
@@ -16,7 +25,6 @@ export default createGlobalStyle`
 
   html, body, #root {
     height: 100%;
-
     /* this defines what 1rem is (1/10) */
     font-size: 62.5%;
   }
@@ -24,10 +32,6 @@ export default createGlobalStyle`
   body {
     -webkit-font-smoothing: antialiased;
     color:#444;
-  }
-
-  body, input, button {
-    font: 14px 'Roboto', sans-serif;
   }
 
   a {

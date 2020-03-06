@@ -8,8 +8,20 @@ export const Container = styled.section`
 
   flex-wrap: wrap;
 
-  
+
 `;
+
+export const TextContent = styled.div`
+  width: 100%;
+  min-height: 15vh;
+  background-color: #ffffff;
+  padding: 2px;
+
+  p {
+    font-size: 2em;
+    color: #aaaaaa;
+  }
+`
 
 export const CardContainer = styled.div`
   width: 32%;
@@ -19,12 +31,21 @@ export const CardContainer = styled.div`
   padding-top: 10px;
 
   section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+    padding: 25px;
+    background-color: ${props => props.bgColor || '#dddddd'};
+
     h2 {
+      font-weight: 300;
       color: #fff;
-      font-size: 2rem;
-      font-weight: normal;
+      font-size: 3rem;
       margin: 2rem 0;
-      text-align: center;
+      letter-spacing: -2px;
     }
   }
 
@@ -49,9 +70,9 @@ export const CardContainer = styled.div`
       margin-top: 15px;
     }
     @media only screen and (max-width: 768px) {
-      
+
         display: block;
-      
+
   }
 
   }

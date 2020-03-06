@@ -2,30 +2,22 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100%;
-  display: flex;
-  justify-content: center;
   height: 120px;
-  border-bottom: 1px solid #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 
   @media only screen and (max-width: 768px) {
     display: none;
   }
 
-`;
-
-export const Container = styled.div`
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-
   nav {
     img {
       height: 100%;
     }
-   
   }
 
   aside {
@@ -34,11 +26,10 @@ export const Container = styled.div`
       display: flex;
 
       li {
-        span {
-          color: #008156;
-          padding: 10px;
-          font-size: 1.6rem;
-        }
+        color: #008156;
+        padding: 10px;
+        font-size: 2rem;
+        text-shadow: 2px 1px 1px #ffffff;
       }
     }
   }

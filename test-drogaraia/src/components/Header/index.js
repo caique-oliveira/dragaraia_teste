@@ -1,35 +1,35 @@
 import React from 'react';
 
-import { Container, Wrapper } from './styles';
+import {Wrapper} from '../../styles/header-styles';
 import logo from '../../imagens/rd.png';
 
 export default function Header() {
   return (
-    <Wrapper>
-      <Container>
+    <>
+      <Wrapper>
         <nav>
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo"/>
         </nav>
         <aside>
           <ul>
             <li>
-              <span>HTML5</span>
+              HTML5
             </li>
             <li>
-              <span>CSS3</span>
+              CSS3
             </li>
             <li>
-              <span>JAVASCRIPT</span>
+              JAVASCRIPT
             </li>
             <li>
-              <span>REACT</span>
+              REACT
             </li>
             <li>
-              <span>REDUX</span>
+              REDUX
             </li>
           </ul>
         </aside>
-      </Container>
-    </Wrapper>
+      </Wrapper>
+    </>
   );
 }
